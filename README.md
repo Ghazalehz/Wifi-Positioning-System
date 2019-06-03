@@ -9,7 +9,7 @@ Although there are many papers in the literature trying to solve the indoor loca
 
 Database used: [Click on database source](http://archive.ics.uci.edu/ml/machine-learning-databases/00310/UJIndoorLoc.zip)
 
-Location: Universitat Jaume, approximatly 110.000m$^2$
+Location: Universitat Jaume, Spain
 
 Date of database creation: 2013
 
