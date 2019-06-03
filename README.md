@@ -1,6 +1,6 @@
 # Wifi-Positioning-System
 
-## Evaluate machine learning techniques to predict via wifi fingerprinting.
+## Evaluate machine learning techniques to predict indoor location of a person via wifi fingerprinting.
 
 Many real world applications need to know the localization of a user in the world to provide their services. Therefore, automatic user localization has been a hot research topic in the last years. Automatic user localization consists of estimating the position of the user (latitude, longitude and altitude) by using an electronic device, usually a mobile phone. Outdoor localization problem can be solved very accurately thanks to the inclusion of GPS sensors into the mobile devices. However, indoor localization is still an open problem mainly due to the loss of GPS signal in indoor environments. Although, there are some indoor positioning technologies and methodologies, this database is focused on WLAN fingerprint-based ones (also know as WiFi Fingerprinting).
 
