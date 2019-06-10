@@ -15,4 +15,11 @@ Date of database creation: 2013
 
 Participants: 20 users and 25 Android devices
 
+Number of WLAN Access Points (WAPs): 520
+
+Total number of training records: 19937
+
+Total number of validation records: 1111
+
 Models investigated: **C5.0, SVM/SVR, KNN, LM, Model Trees, RandomForest**
+
