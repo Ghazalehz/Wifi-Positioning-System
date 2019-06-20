@@ -9,17 +9,17 @@ Although there are many papers in the literature trying to solve the indoor loca
 
 Database used: [Click on database source](http://archive.ics.uci.edu/ml/machine-learning-databases/00310/UJIndoorLoc.zip)
 
-Location: Universitat Jaume, Spain
+Location: **Universitat Jaume, Spain**
 
-Date of database creation: 2013
+Date of database creation: **2013**
 
-Participants: 20 users and 25 Android devices
+Participants: **20 users and 25 Android devices**
 
-Total number of attributes: 529
+Total number of attributes: **529**
 
-Total number of training records: 19937
+Total number of training records: **19937**
 
-Total number of validation records: 1111
+Total number of validation records: **1111**
 
 Models investigated: **C5.0, SVM/SVR, KNN, LM, Model Trees, RandomForest**
 
