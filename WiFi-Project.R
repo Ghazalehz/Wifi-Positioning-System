@@ -14,14 +14,14 @@
 #                                                                                                #
 #           1st 520 attributes are RSSI signal intensity. Rests are Longitude, Latitude, Floor,  #
 #           Building ID, Space ID etc.                                                           #
-#                                                    						 #					 #	
+#                                                    						 #					 	
 #           This piece of code (1st module) will load the data and perform preprocessing.        #                                                                                      
 #												 #												 #
 #           Version: 1.0                                                                         #
 #          											 #											 #
-#           Author : Ghazaleh Zamani	                            				 #										 #
+#           Author : Ghazaleh Zamani	                            				 #										 
 #												 #												 #
-#           Date:    12/10/2018 							         #									 #
+#           Date:    12/10/2018 							         #									 
 #												 #												 #
 ##################################################################################################											           
 
@@ -49,7 +49,7 @@ library(anytime)                                                              # 
 library(dplyr)                                                                # exploratory data analysis
 library(scales)                                                               # map data to aesthetics
 library(data.table)                                                           # subsetting row, column
-library(caret)								      # data preprocessing								  # data preprocessing	
+library(caret)								      # data preprocessing								  
 
 ### loading the Training/Validation data set ###
 
@@ -85,7 +85,7 @@ IndoorVal$TIMESTAMP <- anytime(IndoorVal$TIMESTAMP, tz = "GMT")
 #                         PREPROCESSING                                      #
 #                                                                            #
 # The preprocessing has been applied to both training and validation set.    #
-#																			 #
+#							                     #
 ##############################################################################
  
 ### RSSI signal strength '100' means there is no signal
