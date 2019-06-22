@@ -49,7 +49,7 @@ library(anytime)                                                              # 
 library(dplyr)                                                                # exploratory data analysis
 library(scales)                                                               # map data to aesthetics
 library(data.table)                                                           # subsetting row, column
-library(caret)																  # data preprocessing	
+library(caret)								      # data preprocessing								  # data preprocessing	
 
 ### loading the Training/Validation data set ###
 
