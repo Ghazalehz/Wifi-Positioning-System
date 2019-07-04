@@ -60,5 +60,8 @@ LocationPlot <- ggplot(IndoorLoc, aes(x=LONGITUDE, y=LATITUDE, color = BUILDINGI
 LocationPlot 
 
 
+
+
+
 	
 
