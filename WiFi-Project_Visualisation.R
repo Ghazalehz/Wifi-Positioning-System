@@ -58,36 +58,43 @@ library(caret)								      							                            # data preprocess
 
 ########## plotting the locations #############
 ### Training data locations ###
-LocationPlot <- ggplot(IndoorLoc, aes(x=LONGITUDE, y=LATITUDE, color = BUILDINGID)) + geom_point()
+LocationPlot <- ggplot(IndoorLoc, aes(x=LONGITUDE, y=LATITUDE, 
+				      color = BUILDINGID)) + geom_point()
 LocationPlot 
 
 ### Validation data locations ###
-ValLocPlot <- ggplot(IndoorVal, aes(x=LONGITUDE, y=LATITUDE, color = BUILDINGID)) + geom_point()
+ValLocPlot <- ggplot(IndoorVal, aes(x=LONGITUDE, y=LATITUDE, 
+				    color = BUILDINGID)) + geom_point()
 ValLocPlot
 
 ### Training & Validation data locations in one image ###
 colVec <- c("blue", "red")
 ggplot() +
-  geom_point(data = IndoorLoc, mapping = aes(LONGITUDE, LATITUDE, color = colVec[1], alpha = FLOOR), 
+  geom_point(data = IndoorLoc, mapping = aes(LONGITUDE, LATITUDE, 
+					     color = colVec[1], alpha = FLOOR), 
 	     color = colVec[1], show.legend = TRUE)+
-  geom_point(data = IndoorVal, mapping = aes(LONGITUDE, LATITUDE, color = colVec[2], alpha = FLOOR), 
+  geom_point(data = IndoorVal, mapping = aes(LONGITUDE, LATITUDE, 
+					     color = colVec[2], alpha = FLOOR), 
 	     color = colVec[2], show.legend = TRUE)
 
 ### Histogram of the ranges of RSSI values ###
 Ranges <- subset(IndoorLoc, select = WAP001:WAP520)
 RangeVector <- c(as.matrix(Ranges))
-
-ggplot() + geom_histogram(aes(x = RangeVector), bins = 50) + ggtitle("Range of RSSI values") + 
-  theme(plot.title = element_text(hjust = 0.5)) + xlim(-110,1)
+###
+ggplot() + geom_histogram(aes(x = RangeVector), bins = 50) + 
+              ggtitle("Range of RSSI values") + 
+                 theme(plot.title = element_text(hjust = 0.5)) + xlim(-110,1)
 
 ### Histogram of WLAN Access Points (WAPs) ###
-### It shows the number of WAPs detected by a WiFi scan across the number of database records ###
+### It shows the number of WAPs detected by a WiFi scan across the number of 
+### database records ###
 
 WAPs <- apply(Ranges, 1, function(x) sum(x!=100))
 hist(WAPs)
 	      
-ggplot() + geom_histogram(aes(x = WAPs), bins = 52) + ggtitle("Distribution of number of WAPs among all observations") + 
-  theme(plot.title = element_text(hjust = 0.5))
+ggplot() + geom_histogram(aes(x = WAPs), bins = 52) + 
+	      ggtitle("Distribution of number of WAPs among all observations") + 
+                 theme(plot.title = element_text(hjust = 0.5))
 WAPs
 
 
