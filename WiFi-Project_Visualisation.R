@@ -65,7 +65,40 @@ LocationPlot
 ValLocPlot <- ggplot(IndoorVal, aes(x=LONGITUDE, y=LATITUDE, color = BUILDINGID)) + geom_point()
 ValLocPlot
 
+### Training & Validation data locations in one image ###
+colVec <- c("blue", "red")
+ggplot() +
+  geom_point(data = IndoorLoc, mapping = aes(LONGITUDE, LATITUDE, color = colVec[1], alpha = FLOOR), 
+	     color = colVec[1], show.legend = TRUE)+
+  geom_point(data = IndoorVal, mapping = aes(LONGITUDE, LATITUDE, color = colVec[2], alpha = FLOOR), 
+	     color = colVec[2], show.legend = TRUE)
+
 
 
 	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
