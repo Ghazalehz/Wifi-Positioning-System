@@ -74,10 +74,21 @@ ggplot() +
 	     color = colVec[2], show.legend = TRUE)
 
 ### Histogram of the ranges of RSSI values ###
+Ranges <- subset(IndoorLoc, select = WAP001:WAP520)
+RangeVector <- c(as.matrix(Ranges))
+
 ggplot() + geom_histogram(aes(x = RangeVector), bins = 50) + ggtitle("Range of RSSI values") + 
   theme(plot.title = element_text(hjust = 0.5)) + xlim(-110,1)
 
-	
+### Histogram of WLAN Access Points (WAPs) ###
+### It shows the number of WAPs detected by a WiFi scan across the number of database records ###
+
+WAPs <- apply(Ranges, 1, function(x) sum(x!=100))
+hist(WAPs)
+	      
+ggplot() + geom_histogram(aes(x = WAPs), bins = 52) + ggtitle("Distribution of number of WAPs among all observations") + 
+  theme(plot.title = element_text(hjust = 0.5))
+WAPs
 
 
 
