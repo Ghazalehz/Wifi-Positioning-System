@@ -73,7 +73,9 @@ ggplot() +
   geom_point(data = IndoorVal, mapping = aes(LONGITUDE, LATITUDE, color = colVec[2], alpha = FLOOR), 
 	     color = colVec[2], show.legend = TRUE)
 
-
+### Histogram of the ranges of RSSI values ###
+ggplot() + geom_histogram(aes(x = RangeVector), bins = 50) + ggtitle("Range of RSSI values") + 
+  theme(plot.title = element_text(hjust = 0.5)) + xlim(-110,1)
 
 	
 
