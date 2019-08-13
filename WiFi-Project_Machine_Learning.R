@@ -11,20 +11,20 @@
 #           For that, the model will use RSSI signal strength received by mobile handsets of the #
 #           users in 3 buildings.                                                                #
 #                                                                                                #
-#           Total number of attributes : 529 							                                       #
+#           Total number of attributes : 529                                                     #
 #                                                                                                #
 #           1st 520 attributes are RSSI signal intensity. Rests are Longitude, Latitude, Floor,  #
 #           Building ID, Space ID etc.                                                           #
-#                                                    						                                 #
+#                                                                                                #
 #           This piece of code (3rd module) will load the preprocessed data and perform          #
-#           Machine Learning, modelling and predictions   									                     #
-#           											                                                               #
+#           Machine Learning, modelling and predictions                                          #
+#                                                                                                #
 #           Version: 1.0                                                                         #
-#          											                                                                 #
-#           Author : Ghazaleh Zamani	                            			                         #
-#												                                                                         #
-#           Date:    16/10/2018 							                                                   #
-#												                                                                         #
+#                                                                                                #
+#           Author : Ghazaleh Zamani                                                             #
+#                                                                                                #
+#           Date:    16/10/2018                                                                  #
+#                                                                                                #
 ##################################################################################################
 
 #CODE STRUCTURE###
