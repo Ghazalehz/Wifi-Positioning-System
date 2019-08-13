@@ -1,6 +1,6 @@
 ##################################################################################################
 #                                                                                                #
-#     				                      Project Description                                          # 
+#                                         Project Description                                    # 
 #                                                                                                #
 #           Many real world applications need to know the localization of a user in the world to # 
 #           provide their services. So, automatic user localization has been a hot research topic#
