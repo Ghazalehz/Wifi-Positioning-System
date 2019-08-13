@@ -3,8 +3,8 @@
 #     				                      Project Description                                          # 
 #                                                                                                #
 #           Many real world applications need to know the localization of a user in the world to # 
-#           provide their services. So, automatic user localization has been a hot research topic# 
-#	          in the last years.		                                                               #
+#           provide their services. So, automatic user localization has been a hot research topic#
+#           in the last years.		                                                               #
 #												                                                                         #
 #	          The goal of the project is to build an machine learning model  which will be able    #
 #           to predict the location of an user inside the university Universitat Jaume, Spain.   #
